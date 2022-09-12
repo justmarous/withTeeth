@@ -1,7 +1,10 @@
 import React from 'react';
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import Portfolio from "../components/Portfolio";
+import Header from "./Header";
+import Footer from "./Footer";
+import Portfolio from "./Portfolio";
+import About from "./About";
+import Stack from "./Stack";
+import Contact from "./Contact";
 
 function Main(props) {
     return (

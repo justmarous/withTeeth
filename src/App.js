@@ -1,12 +1,11 @@
-import './css/styles.css';
 import store from "./js/redux/store";
 import {Provider} from 'react-redux'
-import Index from "./js/components";
+import Main from "./js/components/Main";
 
 function App() {
   return (
       <Provider store={store}>
-          <Index/>
+          <Main/>
       </Provider>
   );
 }
