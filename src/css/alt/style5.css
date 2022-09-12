@@ -1,0 +1,113 @@
+section.interests {
+    background-color: white;
+    display: block;
+    overflow: hidden;
+}
+
+section.interests h1 {
+    font-family: 'Saira Condensed',
+        sans-serif;
+    font-size: 30px;
+    color: #1e1e1e;
+    padding: 20px;
+    display: block;
+    text-align: center;
+    width: 100%;
+    text-align: center;
+    background-color: white;
+}
+
+
+div.hobbys {
+    /*    display: block;*/
+    /*    height: 430vh;*/
+}
+
+div.hobbys div {
+    margin: 1vw;
+    width: 98vw;
+    height: 60vw;
+
+}
+
+
+section.interests div.hobbys p.explanation {
+    display: block;
+    font-family: 'Saira Condensed',
+        sans-serif;
+    font-size: 40px;
+    text-align: center;
+    color: transparent;
+    line-height: 100%;
+    height: 100%;
+    padding-top: 20vh;
+}
+
+
+section.interests div.hobby1 {
+
+    background-image: url("hobby3.jpeg");
+    background-size: cover;
+    /*    background-color: black;*/
+}
+
+section.interests div.hobby2 {
+    background-image: url("hobby2.jpeg");
+    background-size: cover;
+    /*    background-color: red;*/
+}
+
+section.interests div.hobby3 {
+    background-image: url("hobby1.jpeg");
+    background-size: cover;
+    /*    background-color: violet;*/
+}
+
+section.interests div.hobby4 {
+    background-image: url("hobby4.jpeg");
+    background-size: cover;
+    /*    background-color: yellow;*/
+}
+
+
+@media (orientation: landscape) {
+    div.hobbys div {
+        width: 80vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 768px) {
+    div.hobbys div {
+        float: left;
+        margin: 0;
+        width: 50vw;
+        /*        height: 100vh;*/
+    }
+
+
+
+    section.interests div.hobbys p.explanation:hover {
+        filter: none;
+        color: wheat;
+        background-color: teal;
+        opacity: 0.8;
+        transition: 0.3s;
+    }
+
+    section.interests h1 {
+        font-size: 50px;
+        padding: 40px;
+    }
+
+}
+
+@media(min-width: 1024px) {
+    div.hobbys div {
+        float: left;
+        margin: 0;
+        width: 50vw;
+        height: 50vh;
+    }
+}
