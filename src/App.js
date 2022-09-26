@@ -1,12 +1,12 @@
-import store from "./js/redux/store";
-import {Provider} from 'react-redux'
-import Main from "./js/components/Main";
+import store from "./redux/store";
+import { Provider } from "react-redux";
+import Main from "./components/Main";
 
 function App() {
   return (
-      <Provider store={store}>
-          <Main/>
-      </Provider>
+    <Provider store={store}>
+      <Main />
+    </Provider>
   );
 }
 
