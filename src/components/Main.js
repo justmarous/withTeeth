@@ -12,6 +12,9 @@ const Wrapper = styled.section`
   background-color: #1c2131;
   color: #7399bb;
   text-align: center;
+  width: 100vw;
+  overflow: hidden;
+  z-index: -10;
 
   & h1 {
     font-family: "Press Start 2P", sans-serif;
@@ -26,6 +29,28 @@ const Wrapper = styled.section`
     width: 266px;
     margin: auto;
   }
+
+  .circle {
+    height: 1400px;
+    width: 1400px;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-35%);
+    top: 50px;
+    background-color: #21293a;
+    opacity: 66%;
+    z-index: -1;
+  }
+  .circle2 {
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    z-index: -8;
+    position: absolute;
+    background-color: #273147;
+    top: 350px;
+    right: 150px;
+  }
 `;
 
 function Main() {
@@ -38,6 +63,8 @@ function Main() {
       <Portfolio />
       <Contact />
       <Footer />
+      <div className={"circle2"} />
+      <div className={"circle"} />
     </Wrapper>
   );
 }

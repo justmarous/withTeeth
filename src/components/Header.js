@@ -11,6 +11,8 @@ const Section = styled.section`
   align-items: center;
   width: 100%;
   height: 75px;
+  z-index: 4;
+
   img {
     width: 22px;
     height: auto;
